@@ -2,6 +2,8 @@
 
 将2026年8月的118份课程资料，按两个课题重新组织成可追溯的图表笔记。
 
+[在线阅读](https://lucky-bqr.github.io/course-notes-2026-08/) · [完整资料包](https://lucky-bqr.github.io/course-notes-2026-08/downloads/course-notes-complete.zip) · [GitHub仓库](https://github.com/Lucky-BQR/course-notes-2026-08)
+
 - 神经重置：8.15–8.16，45份材料，8个主题。
 - 女性脑科学：8.27–8.29，73份材料，10个主题。
 - 输出包含两课PDF、合订本、Markdown、CSV出处索引和可离线阅读的网站。

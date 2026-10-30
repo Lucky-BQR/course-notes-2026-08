@@ -16,7 +16,7 @@ def code_files():
     for folder in ['tools','data','.github']:
         for p in (root/folder).rglob('*'):
             if p.is_file() and '__pycache__' not in str(p) and p.name!='read_notes.py':yield p,p.relative_to(root).as_posix()
-    for name in ['README.md','.gitignore']:yield root/name,name
+    for name in ['README.md','.gitignore','.gitattributes']:yield root/name,name
 
 sourcezip=download/'site-source.zip'
 with zipfile.ZipFile(sourcezip,'w',zipfile.ZIP_DEFLATED) as z:
