@@ -33,7 +33,7 @@ with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as z:
     for p in (root/'docs').rglob('*'):
         if p.is_file() and p.suffix!='.zip':z.writestr('离线网站/'+p.relative_to(root/'docs').as_posix(),site_bytes(p))
     for p,name in code_files():z.write(p,'编辑源码/'+name)
-    for name in ['verification.json','browser-verification.json']:
+    for name in ['verification.json','browser-verification.json','daily-verification.json','daily-browser-verification.json']:
         p=root/'qa'/name
         if p.exists():z.write(p,'验证记录/'+name)
 shutil.copy2(package,download/'course-notes-complete.zip')
